@@ -137,6 +137,7 @@ Where * means required
 | onPrizeDefined | `Function` | () => {} | Function to be called when the roulette stops spinning |
 | spinningTime | `number` | 10 | The roulette spinning time in seconds |
 | prizeItemRenderFunction | `(item) => JSX` | - | Function that renders the roulette prize items |
+| getPrizeAdditionalOffsetFunction | `(number) => number` | - | Function that calculate item extra offset. Can be useful if items have empty space aka gap |
 | topChildren | `node` | - | Children before the roulette prize list |
 | bottomChildren | `node` | - | Children after the roulette prize list |
 | designPlugin | `(props) => ({})` | - | Design plugin for the roulette. If not setted the roulette will use its default built-in design. See [this guide](./docs/guides/how_to_create_your_own_design_plugin.md) to know how to create your own design plugin |
